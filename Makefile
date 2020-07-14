@@ -3,7 +3,7 @@ PREFIX=/usr/local/bin
 
 install:
 	# copy to binary directory and remove .py extension
-	$(COPY) covdaily.py $(PREFIX)/covdaily
+	$(COPY) covdaily.sh $(PREFIX)/covdaily
 	$(COPY) covwatcher.py $(PREFIX)/covnotifier
 	# make executable
 	chmod +x $(PREFIX)/covdaily $(PREFIX)/covnotifier
