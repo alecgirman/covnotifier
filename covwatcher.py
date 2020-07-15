@@ -7,7 +7,7 @@ ptoday = 0
 
 while True:
     try:
-        proc = subprocess.Popen(['/root/bin/covdaily'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        proc = subprocess.Popen(['covnotfier'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         data = proc.communicate()[0].decode('utf-8').splitlines()
 
         today = int(data[0])
